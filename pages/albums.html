@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logoname" id="leftname">KR</li>
+            <li><img id="logo" src="../media/logo.gif"></li>
+            <li class="logoname" id="rightname">NA</li>
+            <li class="navList"><a href="../index.html">Home</a></li>
+            <li class="navList current"><a href="albums.html">Albums</a></li>
+            <li class="navList"><a href="lyrics.html">Lyrics</a></li>
+            <li class="navList"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="box">
+        <div class="flip-card" onclick="sellOut()">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../media/cover/sell.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="../media/cover/sellBack.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card" onclick="stillHere()">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../media/cover/still.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="../media/cover/stillBack.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/eb85590077.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
