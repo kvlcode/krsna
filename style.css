@@ -10,57 +10,30 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
-/* Navigation Bar */
-nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    height: 55px;
-    background-color: black;
-}
-
-.navList {
-    color: aliceblue;
-    padding: 20px;
-}
-
-.navList a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.navList a:hover {
-    color: limegreen;
-    cursor: pointer;
-}
-
-.logoname {
-    color: rgb(34, 204, 94);
-    padding-top: 20px;
-}
-
-#leftname {
-    padding-left: 5px;
-}
-
-#rightname {
-    padding-right: 50px;
-}
-
 #logo {
-    height: 40px;
-    width: 40px;
-    margin-top: 9px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
 }
 
-.current {
+.navbar-brand {
+    color: rgb(34, 204, 94);
+}
+
+.active {
     border-bottom: 5px solid coral;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item{
+    padding-left: 30px;
+}
+
+.nav-item :hover {
+    color: limegreen;
 }
 
 /* Main Container */
@@ -70,7 +43,7 @@ nav ul {
     /* opacity: 0.8; */
     color: white;
     display: flex;
-    margin: 75px auto 25px auto;
+    margin: 50px auto 25px auto;
     width: 70%;
     border-radius: 15px;
     padding: 15px;
@@ -122,11 +95,12 @@ i:hover,
 
 .songItem {
     height: 50%;
+    width: auto;
     display: flex;
     background-color: white;
     color: black;
     margin: 12px 0;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
     border-radius: 35px;
     border: 2px solid lightgreen;
@@ -139,50 +113,43 @@ i:hover,
 
 }
 
-
-.songName {
-    margin-right: 15px;
-}
-
 .songItem img {
-    width: 50px;
-    margin: 0 23px;
+    width: 40px;
     border-radius: 10%;
-}
-
-.songPlay i {
-    padding: 10px;
 }
 
 
 /* Album Page */
 
 .box {
-    min-height: 600px;
-    background-color: black;
-    display: flex;
-    margin: 75px auto 25px auto;
-    width: 70%;
+    margin:90px auto 25px auto;
+    width:70%;    
     border-radius: 25px;
-    opacity: 0.8;
+    display: flex;
     justify-content: space-around;
+    /* box-shadow: 0 0 6px black; */
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+@media screen and (max-width:900px) {
+    .box{
+        flex-direction: column;
+        justify-content:space-around;
+        align-items:center;
+    }
+
 }
 
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    perspective: 1000px;
+    margin: 25px;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
@@ -213,6 +180,8 @@ i:hover,
 .flip-card-back {
     transform: rotateY(180deg);
 }
+
+
 
 /* Lyrics Page */
 
