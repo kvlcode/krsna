@@ -39,7 +39,6 @@ progressBar.addEventListener('change', ()=>{
 })
 
 
-
 // Open Album
 function sellOut() {
     window.open("https://open.spotify.com/album/6KkoeJu06oVZ58nPBbzIcG?si=-zHiZm19Sb2lmJaC4bEXVA","_blank");
@@ -47,5 +46,5 @@ function sellOut() {
 }
 
 function stillHere() {
-    window.location = "https://open.spotify.com/album/3TWJqzaophqIi6ZIm5wkux?si=j83ez58SQXu9VrVydUNN-Q";
+    window.open("https://open.spotify.com/album/3TWJqzaophqIi6ZIm5wkux?si=j83ez58SQXu9VrVydUNN-Q","_blank");
 }
